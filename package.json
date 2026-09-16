@@ -1,0 +1,24 @@
+{
+  "name": "eastcoast-ac-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:check": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "optimize:images": "node scripts/optimize-images.js",
+    "generate:seo": "node scripts/generate-seo-pages.cjs"
+  },
+  "devDependencies": {
+    "heic-convert": "^2.1.0",
+    "sharp": "^0.33.4",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}

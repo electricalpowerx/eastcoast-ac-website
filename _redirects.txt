@@ -1,0 +1,14 @@
+﻿/*.html   /:splat   301!
+
+/local/*   /local/:splat   200!
+/services/*   /services/:splat   200!
+/locations/*   /locations/:splat   200!
+/projects/*   /projects/:splat   200!
+/blog/*   /blog/:splat   200!
+
+/electrician-surrey     /locations/hvac-surrey     301!
+/electrician-vancouver  /locations/hvac-vancouver  301!
+/electrician-burnaby    /locations/hvac-burnaby    301!
+/emergency-electrician-surrey  /services/emergency-hvac  301!
+
+/llms.txt            /llms.txt            200!
