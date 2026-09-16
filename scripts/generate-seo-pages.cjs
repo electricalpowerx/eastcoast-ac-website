@@ -1089,7 +1089,7 @@ function buildLlmsTxt() {
   lines.push("");
   lines.push(`> Licensed 24/7 emergency HVAC serving Surrey and the entire Lower Mainland & Fraser Valley, British Columbia, Canada. Phone: 778-344-4938. Based at ${SITE.address.street}, ${SITE.address.city}, ${SITE.address.region}. Handle: ${SITE.handle}.`);
   lines.push("");
-  lines.push("East Coast AC & Heating Ltd is a Surrey-based HVAC / plumbing-heating contractor offering 24/7 emergency heating and cooling, furnace and AC repair, heat pumps, boilers, ductless mini-splits, maintenance, thermostats, and furnace-safety inspections. Contact form only until a public number is live. No invented prices or review counts.");
+  lines.push("East Coast AC & Heating Ltd is a Surrey-based HVAC / plumbing-heating contractor offering 24/7 emergency heating and cooling, furnace and AC repair, heat pumps, boilers, ductless mini-splits, maintenance, thermostats, and furnace-safety inspections. Phone: 778-344-4938. No invented prices or review counts.");
   lines.push("");
   lines.push("## Services");
   SERVICES.forEach((s) => lines.push(`- [${s.nav}](${SITE.domain}${svcUrl(s.slug)}): ${s.heroSub.split(".")[0]}.`));
@@ -1121,7 +1121,7 @@ function aboutPage() {
     ["Is East Coast AC & Heating licensed?", "East Coast AC & Heating Ltd is a City of Surrey licensed HVAC / plumbing-heating contractor. We do not publish a licence number we cannot verify on this site."],
     ["How long have you been in business?", `East Coast AC & Heating Ltd is a Surrey-based HVAC / plumbing-heating contractor. We do not publish invented years-in-business or job counts on this site.`],
     ["What areas does East Coast AC & Heating serve?", "We are based in Surrey and serve the entire Lower Mainland and Fraser Valley, including Vancouver, Burnaby, Langley, Coquitlam, the Tri-Cities, New Westminster, White Rock, Delta, Richmond, the North Shore, Maple Ridge, Pitt Meadows and Abbotsford."],
-    ["Do you offer 24/7 emergency HVAC?", "Yes — 24/7 emergency heating and cooling. Until our public phone number is live, request dispatch through the contact form."],
+    ["Do you offer 24/7 emergency HVAC?", "Yes — 24/7 emergency heating and cooling. Call or text 778-344-4938 for 24/7 emergency dispatch, or use the contact form."],
     ["Is your work done to code and inspected?", "Permitted HVAC work follows applicable BC codes and municipal requirements. We do not skip permits on work that needs them."],
   ];
   const schemas = [
@@ -1151,7 +1151,7 @@ function aboutPage() {
   const values = [
     ["Fully Licensed", "City of Surrey licensed HVAC / plumbing-heating contractor. Permits on work that needs them. We do not invent licence numbers or review scores."],
     ["Transparent, Upfront Pricing", "You always know what we're doing, why, and exactly what it will cost before any work begins. No surprise overtime fees, ever."],
-    ["Genuine 24/7 Response", "When the furnace dies at 2 a.m. or the AC fails in a heat wave, request emergency service. We do not use another company's phone number on this site — 778-344-4938."],
+    ["Genuine 24/7 Response", "When the furnace dies at 2 a.m. or the AC fails in a heat wave, request emergency service. Call or text 778-344-4938 for emergency heating and cooling."],
     ["Work We Stand Behind", "Quality materials, code-compliant workmanship and clear follow-up. If something isn't right, we make it right."],
   ];
 

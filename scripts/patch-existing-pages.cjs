@@ -47,7 +47,7 @@ function patch(rel, canonical, prefix) {
   }
 
   fs.writeFileSync(full, html, "utf8");
-  console.log(`${changed ? "âœ“ patched" : "Â· unchanged"}  ${rel}`);
+  console.log(`${changed ? "✓ patched" : "· unchanged"}  ${rel}`);
 }
 
 for (const [rel, canon] of Object.entries(rootPages)) patch(rel, canon, "");

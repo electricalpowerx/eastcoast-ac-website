@@ -28,3 +28,6 @@ dist-ssr
 scripts/_*.cjs
 *.local.json
 
+
+# Local Netlify folder
+.netlify
