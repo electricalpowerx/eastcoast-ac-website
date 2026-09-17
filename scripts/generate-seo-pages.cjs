@@ -159,6 +159,20 @@ function footer() {
         </div>
       </div>
 
+      ${
+        SITE.sisterSites && SITE.sisterSites.length
+          ? `<div class="mt-10 pt-6 border-t border-white/10 text-xs">
+        <span class="text-white/50">Also part of our team:</span>
+        ${SITE.sisterSites
+          .map(
+            (s) =>
+              `<a href="${esc(s.url)}" target="_blank" rel="noopener" class="ml-2 font-semibold text-[var(--px-blue-light)] hover:text-white">${esc(s.name)}${s.tagline ? ` — ${esc(s.tagline)}` : ""}</a>`
+          )
+          .join('<span class="text-white/30 mx-2">·</span>')}
+      </div>`
+          : ""
+      }
+
       <div class="mt-12 pt-8 border-t border-white/10 text-xs flex flex-col md:flex-row gap-y-2 md:items-center justify-between">
         <div>© 2026 ${esc(SITE.name)}. All rights reserved. Licensed HVAC / plumbing-heating contractor in British Columbia.</div>
         <div>${esc(SITE.address.street)}, ${esc(SITE.address.city)}, ${esc(SITE.address.region)}${SITE.address.postal ? ' ' + esc(SITE.address.postal) : ''}</div>
@@ -518,7 +532,7 @@ function locationPage(l) {
   </section>`
     : "";
 
-  return `${head(l.metaTitle, l.metaDesc, canonical, schemas, "/images/van.jpg")}
+  return `${head(l.metaTitle, l.metaDesc, canonical, schemas, "/images/trade-furnace-room.png")}
 ${nav()}
 ${breadcrumbBar(crumbs)}
 
@@ -902,7 +916,7 @@ function neighbourhoodPage(n) {
     .map((x) => `<a href="${locUrl(x.slug)}" class="inline-block px-3 py-1.5 rounded-full bg-[var(--px-light-gray)] text-sm text-[var(--px-text)] hover:bg-[var(--px-navy)] hover:text-white transition">${esc(x.name)}</a>`)
     .join("\n        ");
 
-  return `${head(title, metaDesc, canonical, schemas, "/images/van.jpg")}
+  return `${head(title, metaDesc, canonical, schemas, "/images/trade-furnace-room.png")}
 ${nav()}
 ${breadcrumbBar(crumbs)}
 

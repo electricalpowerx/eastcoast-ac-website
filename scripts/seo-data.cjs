@@ -27,7 +27,16 @@ const SITE = {
   "yearsExperience": "",
   "jobsCompleted": "",
   "licenseNumber": "",
-  "logo": "/images/eastcoast-logo.svg"
+  "logo": "/images/eastcoast-logo.svg",
+
+  sisterSites: [
+    { name: "PowerX Electrical Ltd.", url: "https://powerxelectrical.ca/", tagline: "Surrey & Lower Mainland Electrician" },
+    { name: "RapidFlow Plumbing Ltd.", url: "https://rapidflowplumbing.ca", tagline: "Surrey & Lower Mainland Plumber" },
+    { name: "Benra Framing", url: "https://benra-framing.netlify.app", tagline: "Surrey & Lower Mainland Framing" },
+    { name: "Magical Aura Pro Painters", url: "https://magical-aura-painting.netlify.app", tagline: "Surrey & Lower Mainland Painting" },
+    { name: "Precision Tile & Stone Ltd.", url: "https://precisiontileandstone.ca", tagline: "Surrey & Lower Mainland Tile Contractor" },
+    { name: "TrueLevel Drywall Ltd.", url: "https://trueleveldrywall.ca", tagline: "Surrey & Lower Mainland Drywall Contractor" },
+  ],
 };
 const COMBO_SERVICE_SLUGS = [
   "emergency-hvac",
@@ -51,7 +60,7 @@ const SERVICES = [
     "h1": "24/7 Emergency Heating & Cooling in Surrey & the Lower Mainland",
     "metaTitle": "24/7 Emergency HVAC Surrey & Lower Mainland | No Heat, No AC | East Coast AC & Heating",
     "metaDesc": "No heat, no cooling, frozen pipes, or a furnace that will not start? East Coast AC & Heating dispatches 24/7 emergency HVAC service across Surrey and the Lower Mainland. Request a quote — 778-344-4938.",
-    "image": "van.jpg",
+    "image": "trade-furnace-room.png",
     "heroSub": "When the furnace dies on a cold night or the AC fails in a heat wave, you need a real HVAC crew — not an answering service. Request service through our contact form and we will get back to you as fast as we can.",
     "intro": [
       "Heating and cooling emergencies do not keep business hours. East Coast AC & Heating Ltd runs a 24/7 emergency HVAC service for Surrey, Vancouver, Burnaby, Langley and the rest of the Lower Mainland. No heat, no cooling, a furnace that will not ignite, strange smells from the furnace, or frozen pipes tied to a failed heating system — those are the calls we take first.",
@@ -114,7 +123,7 @@ const SERVICES = [
     "h1": "Furnace Repair & Installation",
     "metaTitle": "Furnace Repair & Installation Surrey & Lower Mainland | East Coast AC & Heating",
     "metaDesc": "Furnace will not start, short-cycles, or needs replacement? East Coast AC & Heating repairs and installs furnaces across Surrey and the Lower Mainland. Request a quote — 778-344-4938.",
-    "image": "van.jpg",
+    "image": "trade-furnace-room.png",
     "heroSub": "From a furnace that will not ignite to a full replacement, we service gas furnaces in Surrey homes and across the Lower Mainland — quoted before we start.",
     "intro": [
       "A furnace that will not start, keeps cycling, or no longer keeps up is one of the most common winter calls in Surrey. East Coast AC & Heating Ltd diagnoses ignition, flame-sensing, airflow, and control issues and repairs them when the equipment is worth saving.",
@@ -177,7 +186,7 @@ const SERVICES = [
     "h1": "Air Conditioning Repair & Installation",
     "metaTitle": "AC Repair & Installation Surrey & Lower Mainland | East Coast AC & Heating",
     "metaDesc": "AC down in summer? East Coast AC & Heating repairs and installs central air conditioning across Surrey and the Lower Mainland. Request a quote — 778-344-4938.",
-    "image": "exhaust-fan-installation-surrey.jpg",
+    "image": "trade-heat-pump.png",
     "heroSub": "When the AC dies in a Lower Mainland heat wave, we diagnose, repair, or install cooling so the house is livable again.",
     "intro": [
       "South Surrey, Vancouver, and much of the Lower Mainland now see summer temperatures that older homes were never designed for. East Coast AC & Heating Ltd repairs central air conditioners and installs new cooling when the old system cannot keep up.",
@@ -240,7 +249,7 @@ const SERVICES = [
     "h1": "Heat Pump Installation & Service",
     "metaTitle": "Heat Pump Installation & Service Surrey & Lower Mainland | East Coast AC & Heating",
     "metaDesc": "Heat pump installation, repair and service in Surrey and the Lower Mainland. East Coast AC & Heating sizes and installs ducted and ductless systems. Request a quote.",
-    "image": "fleetwood-panel-heat-pump-ev.jpg",
+    "image": "trade-heat-pump.png",
     "heroSub": "A properly sized heat pump heats and cools efficiently through most Lower Mainland weather. We install and service ducted and ductless systems.",
     "intro": [
       "Heat pumps are one of the most practical comfort upgrades in coastal BC: heating for most of the winter and cooling for summer, from one system. East Coast AC & Heating Ltd designs installs around your home — not a one-size outdoor unit dropped on a pad.",
@@ -303,7 +312,7 @@ const SERVICES = [
     "h1": "Boiler Repair & Installation",
     "metaTitle": "Boiler Repair & Installation Surrey & Lower Mainland | East Coast AC & Heating",
     "metaDesc": "Boiler not heating? East Coast AC & Heating repairs and installs residential boilers and hydronic heat in Surrey and the Lower Mainland. Request a quote.",
-    "image": "commercial project.jpg",
+    "image": "commercial-hvac-project-surrey.jpg",
     "heroSub": "Hydronic heat is quiet and even when it is running right. We repair and replace boilers for homes that rely on hot water heat.",
     "intro": [
       "Many older Lower Mainland homes and some newer custom builds still heat with a boiler and radiators or in-floor loops. When that system fails, rooms go cold even if the rest of the house looks fine. East Coast AC & Heating Ltd diagnoses boiler lockouts, circulation, and zone issues.",
@@ -366,7 +375,7 @@ const SERVICES = [
     "h1": "Ductless Mini-Split Installation & Service",
     "metaTitle": "Ductless Mini-Split Surrey & Lower Mainland | East Coast AC & Heating",
     "metaDesc": "Ductless mini-split heat pumps for homes without ducts. Install and service in Surrey and the Lower Mainland from East Coast AC & Heating. Request a quote.",
-    "image": "exhaust-fan-installation-surrey.jpg",
+    "image": "trade-heat-pump.png",
     "heroSub": "No ducts? A ductless mini-split can heat and cool a suite, addition, or whole small home without ripping out walls for ductwork.",
     "intro": [
       "Suites, laneway homes, heritage houses, and additions often have no usable ductwork. Ductless mini-splits put heating and cooling exactly where you need it. East Coast AC & Heating Ltd installs single-zone and multi-zone systems and services units that no longer cool or heat.",
@@ -429,7 +438,7 @@ const SERVICES = [
     "h1": "Seasonal HVAC Maintenance",
     "metaTitle": "Furnace & AC Maintenance Surrey & Lower Mainland | East Coast AC & Heating",
     "metaDesc": "Seasonal furnace, heat pump and AC maintenance in Surrey and the Lower Mainland. East Coast AC & Heating keeps systems safer and more reliable. Request a quote.",
-    "image": "van-guy.jpg",
+    "image": "trade-furnace-room.png",
     "heroSub": "A fall furnace clean-and-check and a spring cooling check catch a lot of no-heat and no-cool calls before they become emergencies.",
     "intro": [
       "Most no-heat calls in October and no-cool calls in June are systems that were never checked. East Coast AC & Heating Ltd offers seasonal maintenance for furnaces, boilers, heat pumps, and air conditioners serving Surrey and the Lower Mainland.",
@@ -492,7 +501,7 @@ const SERVICES = [
     "h1": "Thermostat Installation & Comfort Controls",
     "metaTitle": "Thermostat Installation Surrey & Lower Mainland | East Coast AC & Heating",
     "metaDesc": "Thermostat replacement and control setup for furnaces, heat pumps and AC in Surrey and the Lower Mainland. East Coast AC & Heating. Request a quote.",
-    "image": "smart-home-control-panel-automation.jpg",
+    "image": "trade-heat-pump.png",
     "heroSub": "A dead, confusing, or mismatched thermostat can look like a failed furnace. We install and set up controls that actually match the equipment.",
     "intro": [
       "Wrong thermostat wiring or a heat-pump thermostat left on the wrong mode is a classic 'no heat / no cool' call. East Coast AC & Heating Ltd installs conventional and heat-pump thermostats and sets them up so the system runs the way it was designed.",
@@ -555,7 +564,7 @@ const SERVICES = [
     "h1": "Frozen Pipes & Heating Emergencies",
     "metaTitle": "Frozen Pipes & No-Heat Emergencies Surrey | East Coast AC & Heating",
     "metaDesc": "Frozen pipes after a furnace failure? East Coast AC & Heating restores heat and helps protect plumbing in Surrey and the Lower Mainland. Request emergency service.",
-    "image": "van.jpg",
+    "image": "trade-furnace-room.png",
     "heroSub": "When the heat fails in a cold snap, pipes are next. We restore heating and help you deal with frozen-pipe risk tied to a down furnace or boiler.",
     "intro": [
       "A furnace or boiler that dies overnight in a Surrey cold snap can freeze pipes in crawlspaces, garages, and exterior walls. East Coast AC & Heating Ltd treats that as an HVAC emergency: restore heat, reduce further freeze risk, and flag plumbing that needs a plumber if a pipe has already split.",
@@ -618,7 +627,7 @@ const SERVICES = [
     "h1": "Furnace Smells, Carbon Monoxide & Safety Checks",
     "metaTitle": "Furnace Smell & Carbon Monoxide Safety Surrey | East Coast AC & Heating",
     "metaDesc": "Strange smell from the furnace or a carbon monoxide alarm? East Coast AC & Heating inspects and repairs heating systems in Surrey and the Lower Mainland. Request service.",
-    "image": "smoke-detector-installation-surrey.jpg",
+    "image": "trade-furnace-room.png",
     "heroSub": "A strange smell from the furnace is not something to 'wait until Monday.' We inspect combustion, venting, and filters and tell you whether it is dust — or a reason to shut the system down.",
     "intro": [
       "Musty, burning, or exhaust-like smells from a furnace worry homeowners for good reason. Sometimes it is dust burning off at first fall start-up. Sometimes it is a cracked heat exchanger, blocked vent, or dirty burner. East Coast AC & Heating Ltd inspects the heating system and does not invent certifications we cannot verify.",
@@ -744,7 +753,7 @@ const SERVICES = [
     "h1": "Strata & Multi-Family HVAC",
     "metaTitle": "Strata HVAC Surrey & Lower Mainland | East Coast AC & Heating",
     "metaDesc": "Strata and multi-family heating and cooling service in Surrey and the Lower Mainland. In-suite and common-area HVAC from East Coast AC & Heating. Request a quote.",
-    "image": "team.png",
+    "image": "commercial-hvac-project-surrey.jpg",
     "heroSub": "Townhomes, condos, and rental suites have different HVAC access rules. We work with owners and strata on in-suite furnaces, heat pumps, and common-area comfort.",
     "intro": [
       "Multi-family buildings around Metrotown, Surrey City Centre, and New Westminster mix in-suite furnaces, ductless heads, and shared mechanical rooms. East Coast AC & Heating Ltd services the systems we are allowed to work on and coordinates with strata when access or common equipment is involved.",
